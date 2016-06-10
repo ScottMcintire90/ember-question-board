@@ -1,0 +1,10 @@
+<div class="col-md-6 questions">
+  <h2>Questions</h2>
+  <h3>Ask a question</h3>
+  {{new-question saveQuestion="saveQuestion"}}
+</div>
+
+<div class="col-md-6 answers">
+  <h2>Answers</h2>
+  {{question-tile questions=model.questions deleteQuestion="deleteQuestion"}}
+</div>

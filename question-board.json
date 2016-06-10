@@ -1,0 +1,22 @@
+{ "questions": [{
+    "content": "Why should I learn to program?",
+    "author": "Scott",
+    "notes": "I need to know ASAP"
+  }, {
+    "content": "What's the best way to bake a soufflé?",
+    "author": "Frodo",
+    "notes": "I'm hungry"
+
+  }, {
+    "content": "How can I become president of the USA?",
+    "author": "Morpheus",
+    "notes": "We are in the matrix."
+  }],
+    "answers": [{
+      "user": "Justin",
+      "comment": "Yes"
+    }, {
+      "user": "Sandra",
+      "comment": "No"
+    }]
+  }
