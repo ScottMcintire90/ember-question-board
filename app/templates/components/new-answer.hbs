@@ -1,1 +1,14 @@
-{{yield}}
+<h3>Add an answer</h3>
+<div class="newAnswerForm">
+  <form>
+    <div class="form-group">
+      <label for="user">Name:</label>
+      {{input value=user id="user" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="comment">Answer:</label>
+      {{input value=comment id="comment" class="form-control"}}
+    </div>
+    <button class="btn btn-success" {{action 'saveAnswer'}}>Submit</button>
+  </form>
+</div>

@@ -5,7 +5,12 @@ module.exports = function(environment) {
     modulePrefix: 'question-board',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://question-board-be505.firebaseio.com',
+    firebase: {
+    apiKey: "AIzaSyAMZK7CQnwJ_VWGWvbXZ2xrfm0oXchffTM",
+    authDomain: "question-board-be505.firebaseapp.com",
+    databaseURL: "https://question-board-be505.firebaseio.com",
+    storageBucket: "question-board-be505.appspot.com",
+  },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -22,23 +27,23 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+  // ENV.APP.LOG_RESOLVER = true;
+  // ENV.APP.LOG_ACTIVE_GENERATION = true;
+  // ENV.APP.LOG_TRANSITIONS = true;
+  // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+  // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
-    // Testem prefers this...
-    ENV.baseURL = '/';
-    ENV.locationType = 'none';
+  // Testem prefers this...
+  ENV.baseURL = '/';
+  ENV.locationType = 'none';
 
-    // keep test console output quieter
-    ENV.APP.LOG_ACTIVE_GENERATION = false;
-    ENV.APP.LOG_VIEW_LOOKUPS = false;
+  // keep test console output quieter
+  ENV.APP.LOG_ACTIVE_GENERATION = false;
+  ENV.APP.LOG_VIEW_LOOKUPS = false;
 
-    ENV.APP.rootElement = '#ember-testing';
+  ENV.APP.rootElement = '#ember-testing';
   }
 
   if (environment === 'production') {
@@ -46,4 +51,4 @@ module.exports = function(environment) {
   }
 
   return ENV;
-};
+  };
