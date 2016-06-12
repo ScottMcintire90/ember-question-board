@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  sortDefinition: ['date:desc'],
-  sortedAnswers: Ember.computed.sort('answers', 'sortDefinition'),
+  sort: ['date:desc'],
+  sortedAnswers: Ember.computed.sort('answers', 'sort'),
   actions: {
     saveAnswer(params) {
       this.sendAction('saveAnswer', params);
