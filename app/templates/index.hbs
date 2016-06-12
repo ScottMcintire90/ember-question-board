@@ -1,13 +1,5 @@
-<div class="col-md-6 questions">
+<div class="questions">
   <h2>Questions</h2>
-  {{question-tile questions=model.questions deleteQuestion="deleteQuestion"}}
-
-
-  <h3>Ask a question</h3>
   {{new-question saveQuestion="saveQuestion"}}
-</div>
-
-<div class="col-md-6 answers">
-  <h2>Answers</h2>
-  {{new-answer}}
+  {{question-tile questions=model.questions update="update" destroyQuestion="destroyQuestion"}}
 </div>
