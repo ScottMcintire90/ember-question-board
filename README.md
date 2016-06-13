@@ -1,7 +1,8 @@
 # Question-board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+An online app to ask questions and give answers.
+June 10th, 2016
+By Scott McIntire
 
 ## Prerequisites
 
@@ -50,4 +51,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

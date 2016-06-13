@@ -1,10 +1,10 @@
 {{#each sortedQuestions as |question|}}
   <div class="question">
     <h3 class="question-link">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h3>
-    <p>By: {{question.author}}</p>
+    <h4>By: {{question.author}}</h4>
     {{#if isContentShowing}}
-      <p{{action 'contentHide'}}>Notes: {{question.notes}}</p>
-      <p{{action 'contentHide'}}>Submitted on: {{question.date}}</p>
+      <h4{{action 'contentHide'}}>Notes: {{question.notes}}</h4>
+      <h5{{action 'contentHide'}}>Submitted on: {{question.date}}</h5>
 
     {{else}}
       <button class="btn-default btn-success" {{action 'contentShow'}}>Show Notes</button>

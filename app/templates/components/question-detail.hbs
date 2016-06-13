@@ -1,6 +1,6 @@
-<h2>{{question.content}}</h2>
-<p>By: {{question.author}}</p>
-<p>Notes on this Question: {{question.notes}}</p>
-<p>Submitted on: {{question.date}}</p>
+<h1>{{question.content}}</h1>
+<h4>By: {{question.author}}</h4>
+<h4>Notes: {{question.notes}}</h4>
+<h5>Submitted on: {{question.date}}</h5>
 
 <button class="btn-default" {{action 'delete' question}}>Delete Question</button>

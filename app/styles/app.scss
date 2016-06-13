@@ -11,7 +11,7 @@
   margin-right: 320px;
   margin-left: 320px;
   margin-bottom: 50px;
-  border: 5px solid #44cc00;
+  border: 5px solid #0f3300;
   background-color: #ccffb3;
   border-radius: 25px;
   padding: 20px;
@@ -30,24 +30,17 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Indie Flower', cursive;
 }
 nav {
-  text-align: center;
   margin-left: 300px;
   margin-right: 300px;
   background-color: red;
-}
-.container-fluid {
   text-align: center;
   background-color: #184d00;
 }
-
-#ember480 {
+nav a {
   color: white;
-}
-#ember488 a {
-  color: white;
-}
-#ember487 a {
-  color: white;
+  font-size: 26px;
+  margin: 40px;
 }
