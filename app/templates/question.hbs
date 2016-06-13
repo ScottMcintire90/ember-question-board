@@ -1,7 +1,9 @@
-<div class="col-md-6 col-left">
+<div class="boxModel">
+
   {{question-detail question=model destroyQuestion="destroyQuestion"}}
   {{new-answer question=model saveAnswer="saveAnswer"}}
-</div>
-<div class="col-md-6 col-right">
+
+
   {{answer-detail answers=model.answers saveAnswer="saveAnswer" destroyAnswer="destroyAnswer"}}
+
 </div>

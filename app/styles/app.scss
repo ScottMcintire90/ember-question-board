@@ -1,8 +1,53 @@
 .header {
   text-align: center;
   font-family: 'Monoton', cursive;
-  font-size: 55px;
+  font-size: 75px;
+  color: #206600;
 }
 .questions {
   text-align: center;
+}
+.boxModel {
+  margin-right: 320px;
+  margin-left: 320px;
+  margin-bottom: 50px;
+  border: 5px solid #44cc00;
+  background-color: #ccffb3;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 10px 10px 5px #2a8000;
+}
+.boxModel a {
+  color: black;
+}
+button {
+  margin: 20px;
+}
+
+body {
+  background: url(https://d1yn1kh78jj1rr.cloudfront.net/preview/colorful-splash-frame_7kM4Nf_M.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+nav {
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: red;
+}
+.container-fluid {
+  text-align: center;
+  background-color: #184d00;
+}
+
+#ember480 {
+  color: white;
+}
+#ember488 a {
+  color: white;
+}
+#ember487 a {
+  color: white;
 }
