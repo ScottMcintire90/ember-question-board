@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         user: this.get('user'),
         comment: this.get('comment'),
         date: moment().format('MMMM Do YYYY, h:mm:ss a'),
+        rating: 0,
         question: this.get('question')
       };
       this.set('newAnswer', false);

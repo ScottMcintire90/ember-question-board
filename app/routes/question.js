@@ -5,6 +5,21 @@ export default Ember.Route.extend({
     return this.store.findRecord('question', params.question_id);
   },
   actions: {
+    upvoteAnswer(answer) {
+      var rating = answer.get('rating');
+      var newRating = rating += 1;
+      answer.set('rating', newRating);
+      answer.save();
+      this.transitionTo('question', this.question);
+    },
+    downvoteAnswer(answer) {
+      var rating = answer.get('rating');
+      var newRating = rating -= 1;
+      answer.set('rating', newRating);
+      answer.save();
+      this.transitionTo('question', this.question);
+    },
+
     destroyQuestion(question) {
       var answer_deletions = question.get('answers').map(function(answer){
         return answer.destroyRecord();

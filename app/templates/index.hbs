@@ -3,6 +3,7 @@
     <h1>Questions</h1>
     <h5>Click a question to view answers</h5>
     {{new-question saveQuestion="saveQuestion"}}
+    <button {{action 'sortQuestions'}} class="sorter btn-primary">Sort by number of answer</button>
     {{question-tile questions=model.questions update="update" destroyQuestion="destroyQuestion"}}
   </div>
 </div>
