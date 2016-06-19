@@ -1,6 +1,6 @@
 {{#each sortedQuestions as |question|}}
   <div class="question">
-    <h3 class="question-link">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h3>
+    <h3 class="question-link">{{question-popularity question}} {{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h3>
     <h4>By: {{question.author}}</h4>
     {{#if isContentShowing}}
       <h4{{action 'contentHide'}}>Notes: {{question.notes}}</h4>
