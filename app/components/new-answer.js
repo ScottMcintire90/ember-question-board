@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     },
     saveAnswer() {
       var params = {
-        user: this.get('user'),
+        userName: this.get('userName'),
         comment: this.get('comment'),
         date: moment().format('MMMM Do YYYY, h:mm:ss a'),
         rating: 0,
