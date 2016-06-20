@@ -1,0 +1,6 @@
+{{#each sortedQuestions as |question|}}
+  <div class="question">
+    <h3 class="question-link">{{question-popularity question}} {{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h3>
+    <button class="btn-primary" {{action 'addToFavorites'}}>Add to favorites</button>
+  </div>
+{{/each}}
