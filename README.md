@@ -1,7 +1,7 @@
 # Question-board
 
 An online app to ask questions and give answers.
-June 10th, 2016
+June 18th, 2016
 By Scott McIntire
 
 ## Prerequisites
