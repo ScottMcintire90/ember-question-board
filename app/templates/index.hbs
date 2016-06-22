@@ -1,10 +1,9 @@
 <div class="boxModel">
   <div class="questions">
-    <h1>Questions</h1>
-    {{#link-to 'favorites'}}Favorite Questions{{/link-to}}
+    <h1 class="large">Questions</h1>
+    {{#link-to 'favorites'}}<h2>Click to see the Favorite Questions</h2>{{/link-to}}
     <h5>Click a question to view answers</h5>
     {{new-question saveQuestion="saveQuestion"}}
     {{question-tile questions=model.questions update="update" destroyQuestion="destroyQuestion"}}
-    <h1>Users</h1>
   </div>
 </div>

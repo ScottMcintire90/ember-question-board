@@ -7,7 +7,7 @@
       <h4{{action 'contentHide'}}>Notes: {{question.notes}}</h4>
       <h5{{action 'contentHide'}}>Submitted on: {{question.date}}</h5>
     {{else}}
-      <button class="btn-default btn-success" {{action 'contentShow'}}>Show Notes</button>
+      <button class="btn-default btn-success" {{action 'contentShow' question}}>Show Notes</button>
     {{/if}}
   </div>
 {{/each}}
