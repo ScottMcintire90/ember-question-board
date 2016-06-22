@@ -2,7 +2,6 @@
 
   {{question-detail question=model destroyQuestion="destroyQuestion"}}
   {{new-answer question=model saveAnswer="saveAnswer"}}
-    <button {{action 'addToFavorites' question}}>Add to Favorites</button>
 
   {{answer-detail answers=model.answers saveAnswer="saveAnswer" downvoteAnswer = "downvoteAnswer" upvoteAnswer = "upvoteAnswer" destroyAnswer="destroyAnswer"}}
 

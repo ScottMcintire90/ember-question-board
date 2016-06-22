@@ -5,7 +5,6 @@ export default Ember.Service.extend({
 
   add(question) {
     this.get('favorites').pushObject(question);
-    console.log(this.get('favorites'));
-  },
+  }
 
 });

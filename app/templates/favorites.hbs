@@ -1,8 +1,4 @@
 <div class="boxModel">
   <h1><center>Favorite Questions</center></h1>
-  <ul>
-  {{#each favorites.questions as |question|}}
-    <li>{{question.content}}</li>
-  {{/each}}
-  </ul>
+  {{favorite-component addToFavorites="addToFavorites"}}
 </div>

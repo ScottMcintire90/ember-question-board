@@ -44,9 +44,9 @@ export default Ember.Route.extend({
       answer.destroyRecord();
       this.transitionTo('question');
     },
+
     addToFavorites(question) {
       this.get('favoriteQuestions').add(question);
-      this.transitionTo('favorites');
-    },
+    }
   }
 });
